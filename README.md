@@ -5,4 +5,6 @@ Koa 是由 Express 原班人马打造的更小、更健壮、更富有表现力�
   1. demo1 认知 Koa
   2. demo2 Koa 原生实现路由
   3. demo3 Koa-router 路由中间件
-  4. demo4 请求数据获取
+  4. demo4 请求数据获取(GET)
+    1. 11111
+    2. 22222
