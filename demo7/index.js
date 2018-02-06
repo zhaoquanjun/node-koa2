@@ -23,7 +23,7 @@ app.use( async ( ctx ) => {
 
   // 获取静态资源内容，有可能是文件内容、目录、或者404
   let _content = await content( ctx, fullStaticPath )
-
+  
   // 解析请求内容的类型
   let _mime = parseMine(ctx.url);
 

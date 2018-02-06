@@ -17,6 +17,7 @@ Koa 是由 Express 原班人马打造的更小、更健壮、更富有表现力�
   - demo6 koa-bodyparser 中间件实现 POST 请求对于 form 表单数据的解析 -> JSON 格式
   - demo7 原生koa2实现静态资源服务器
   <pre>
+  - 整个结构
       ├── static # 静态资源目录
       │   ├── css/
       │   ├── image/
@@ -30,6 +31,8 @@ Koa 是由 Express 原班人马打造的更小、更健壮、更富有表现力�
       │   └── walk.js # 遍历目录内容
       └── index.js # 启动入口文件
   </pre>
+  - demo8 利用 koa-static 中间件实现静态资源加载 （结构同于demo7）
+
 
   
 

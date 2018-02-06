@@ -22,7 +22,7 @@ async function content(ctx, fullStatucPath) {
   // 封装请求资源的完绝路径
   let reqPath = path.join(fullStatucPath,ctx.url);
 
-  // 判断请求路径是否是存在目录或者文件
+  // 判断请求路径是否是存在目录或者文件  ->  fs.existsSync(url)异步   fs.exists(url)同步
   let exist = fs.existsSync(reqPath)
 
   // 返回请求内容，默认是空（''）
@@ -32,10 +32,10 @@ async function content(ctx, fullStatucPath) {
     // 如果请求路径不存在，返回404
     content = '404 Not Found! o(╯□╰)o！'
   } else {
-    // 判断访问地址是文件夹还是文件
-    let stat = fs.statSync(reqPath);
+    // 判断访问地址是文件夹还是文件  -> 返回一个stat数组对象
+    let stat = fs.statSync(reqPath); 
 
-    if(stat.isDirectory()) {
+    if(stat.isDirectory()) { // stat.isDirectory() -> 判断是不是文件夹（目录） || stat.isFile()  ->  判断是不是文件
       // 如果是目录（文件夹），则读取目录内容
       content = dir(ctx.url, reqPath)
     } else {
