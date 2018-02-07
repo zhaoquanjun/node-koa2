@@ -36,6 +36,12 @@ Koa 是由 Express 原班人马打造的更小、更健壮、更富有表现力�
   > koa提供了从上下文直接读取、写入cookie的方法;  |  koa2 中操作的cookies是使用了npm的cookies模块,所以在读写cookie的使用参数与该模块的使用一致。
       1. ctx.cookies.get(name, [options]) 读取上下文请求中的cookie
       2.ctx.cookies.set(name, value, [options]) 在上下文中写入cookie
+  - demo10 koa2 实现 session （没有数据库支持，没能完成测试）
+  > koa2原生功能只提供了cookie的操作，但是没有提供session操作。session就只用自己实现或者通过第三方中间件实现。
+  > 如果session数据量很小，可以直接存在内存中
+  > 如果session数据量很大，则需要存储介质存放session数据
+  - demo11 koa2加载模板引擎
+  - demo12 busboy 模块（busboy 模块是用来解析POST请求，node原生req中的文件流）
 
 
   
