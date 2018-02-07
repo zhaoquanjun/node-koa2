@@ -34,8 +34,8 @@ Koa 是由 Express 原班人马打造的更小、更健壮、更富有表现力�
   - demo8 利用 koa-static 中间件实现静态资源加载 （结构同于demo7）
   - demo9 koa2 使用 cookie
   > koa提供了从上下文直接读取、写入cookie的方法;  |  koa2 中操作的cookies是使用了npm的cookies模块,所以在读写cookie的使用参数与该模块的使用一致。
-   - ctx.cookies.get(name, [options]) 读取上下文请求中的cookie
-   - ctx.cookies.set(name, value, [options]) 在上下文中写入cookie
+      1. ctx.cookies.get(name, [options]) 读取上下文请求中的cookie
+      2.ctx.cookies.set(name, value, [options]) 在上下文中写入cookie
 
 
   
